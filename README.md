@@ -30,7 +30,6 @@ C. Kualitas Kode (Clean Code Implementation)
   - Backend: Memisahkan logic API ke folder `routes/transactions.js` agar `server.js` lebih rapi.
 
 ## Struktur Direktori Proyek
-
 ```text
 UASPemWeb/
 ├── backend/
@@ -50,5 +49,42 @@ UASPemWeb/
 ├── smart-contracts/
 │   └── DonationContract.sol  # File Solidity
 └── README.md
+```
 
-## Struktur Direktori Proyek
+## Cara Instalasi & Runningnya
+
+Memerlukan
+Node.Js
+Git Untuk Clone Repository
+MetaMas untuk wallet yang terhubng ke Sepolia Testnet
+
+1. Clone Repository
+Buka terminal dan masukan command
+git clone https://github.com/BaimGG88/UAS_Praktikum_PemrogramanWeb_Web3Fullstack cd web3-dapp-uas
+
+2. Setup dan Jalankan Backend serta Frondend menggunakan command 
+ buka terminal terlebih dahulu
+```bash
+cd backend
+npm install
+node server.js
+```
+Output Sukses: Backend running on http://localhost:5000
+
+buka terminal baru
+```bash
+cd frontend
+npm install
+npm start
+```
+
+Aplikasi akan otomatis terbuka di browser: http://localhost:3000
+
+## Cara penggunaan Aplikasi
+1. Pastikan backend dan frontend sudah berjalan.
+2. Buka browser di http://localhost:3000.
+3. Klik tombol Connect MetaMask (Pastikan Anda di jaringan Sepolia).
+4. Pastikan Anda memiliki saldo Sepolia ETH (bisa didapat dari Faucet).
+5. Klik tombol Donasi 0.001 ETH.
+6. Konfirmasi transaksi di pop-up MetaMask.
+7. Tunggu notifikasi sukses, dan data donasi akan muncul di daftar.
